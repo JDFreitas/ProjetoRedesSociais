@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* Configurações gerais */
+*{
+    margin: 0px;/*Zerando as margens*/
+    padding: 0px;/*Zerando o preenchimento*/
+    font-family: Arial, Helvetica, sans-serif;/*Configuração do tipo fonte*/
+}
+/* Configurando o Html e o corpo */
+html, body{
+    height: 100vh;/*Ocupar 100% da altura da viewport*/
+    width: 100vw;/*Ocupar 100% da largura na viewport*/
+    background-color: black;/*Cor de fundo*/
+}
+/* Configuração do corpo */
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;/* Shorthand do fundo: carregando uma imagem, sem repetiçoes, alinhada pelo topo e centro */
+    background-size: cover;/*A imagem de fundo é dimensionada de forma proporcional para cobrir completamente o elemento pai*/
+    background-attachment: fixed;/*a imagem de fundo fica fixa em relação à janela de visualização*/
+}
+/*Configurando a tag principal*/
+main{
+    position: relative;/*Deixando a posição relativa*/
+    height: 100vh;/*Ocupar 100% da altura da viewport*/
+}
+/*Configuração da seção com ID telefone*/
+section#telefone{
+    position: absolute;/*Deixando a posição absoluta*/
+    top: 50%;/*Distacia com 50% do topo*/
+    left: 50%;/*Distacia com 50% da esquerda*/
+    transform: translate(-50%, -50%);/*o elemento seja centralizado tanto na horizontal como na vertical dentro do seu contêiner */
+    
+    height: 627px;/*Altura do contêiner*/
+    width: 311px;/*Largura do conêiner*/
+    background: url(../imagens/frame-iphone.png) no-repeat top center;/* Shorthand do fundo: carregando uma imagem, sem repetiçoes, alinhada pelo topo e centro */
+
+section#redes{
+
+}
