@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* Configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Configurnada as barras de rolagem para não aparecer */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+/* Configuração da imagem */
+img{
+    width: 100vw;/*Largura 100% da viewport*/
+}
+/*Configurando os links*/
+a{
+    display: block;/*Transformando em bloco assim ele não fica na mesma linha*/
+    background-color: darkred ;/*Cor de fundo*/
+    color: white;/*Cor da fonte*/
+    padding: 20px;/*Tamanho do preenchimento*/
+    text-align: center;/*Alinhamento do texto*/
+    font-weight: bolder;/*Espessura da fonte, neste caso negrito*/
+    text-decoration: none;/*Decoração do texto desligado*/
+}
+/* Configurando o link quando o mouse passar sobre */
+a:hover{
+    background-color: red;/*Mundando a cor de fundo*/
+}

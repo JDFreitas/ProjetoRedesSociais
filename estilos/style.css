@@ -32,7 +32,35 @@ section#telefone{
     height: 627px;/*Altura do contêiner*/
     width: 311px;/*Largura do conêiner*/
     background: url(../imagens/frame-iphone.png) no-repeat top center;/* Shorthand do fundo: carregando uma imagem, sem repetiçoes, alinhada pelo topo e centro */
-
+}
+/* Congiguração do frame tela */
+iframe#tela{
+    position: relative;/*Posicionamento relativo*/
+    top: 80px;/*Distância do topo*/
+    left: 22px;/*Distância da esquerda*/
+    width: 267px;/*largura*/
+    height: 471px;/*Altura*/
+}
+/*Configurando a seção com id redes*/
 section#redes{
-
+    text-align: right;/*Alinhamento a direita*/
+}
+/* Configurando os links dentro da seção com o id redes */
+section#redes a{
+    display: block;
+}
+/*Configurando as imagem dentro da seção com o id redes*/
+section#redes img{
+    width: 50px;/*Largura da imagem*/
+    margin: 10px;/*Margem da imagem*/
+    border-radius: 50%;/*Arrendondando as imagens*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /*Aplicação de sombra*/
+    box-sizing: border-box;/*Deixando o espaço da borda dentro da caixa, nesse modo impede que ao alterar a borda não mexa nos outro intes*/
+}
+/* configurando o passar do mouse nas imagens dentro da seção como id rede */
+section#redes img:hover{
+    border: 2px solid rgb(255, 255, 255,0.5);/*Mundando a cor da borda*/
+    transform: translate(-3px,3px);/*Mundando a posição*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);/*Configurando a sombra*/
+    transition: transform 0.3s, border 0.5s;/*Configurando a transições dos componentes*/
 }
